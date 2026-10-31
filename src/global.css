@@ -1,5 +1,54 @@
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/preflight.css" layer(base);
+@import "./theme/tokens.css";
 @import "tailwindcss/utilities.css";
 
 @import "nativewind/theme";
+
+@utility typography__h1 {
+  font-family: var(--font-poppins-bold);
+  font-size: var(--text-h1);
+  line-height: var(--text-h1--line-height);
+}
+
+@utility typography__h2 {
+  font-family: var(--font-poppins-semibold);
+  font-size: var(--text-h2);
+  line-height: var(--text-h2--line-height);
+}
+
+@utility typography__h3 {
+  font-family: var(--font-poppins-semibold);
+  font-size: var(--text-h3);
+  line-height: var(--text-h3--line-height);
+}
+
+@utility typography__h4 {
+  font-family: var(--font-poppins-medium);
+  font-size: var(--text-h4);
+  line-height: var(--text-h4--line-height);
+}
+
+@utility typography__body-large {
+  font-family: var(--font-poppins-regular);
+  font-size: var(--text-body-large);
+  line-height: var(--text-body-large--line-height);
+}
+
+@utility typography__body-medium {
+  font-family: var(--font-poppins-regular);
+  font-size: var(--text-body-medium);
+  line-height: var(--text-body-medium--line-height);
+}
+
+@utility typography__body-small {
+  font-family: var(--font-poppins-regular);
+  font-size: var(--text-body-small);
+  line-height: var(--text-body-small--line-height);
+}
+
+@utility typography__caption {
+  font-family: var(--font-poppins-regular);
+  font-size: var(--text-caption);
+  line-height: var(--text-caption--line-height);
+}
