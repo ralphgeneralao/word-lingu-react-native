@@ -25,6 +25,12 @@ In the output, you'll find options to open the app in a
 
 You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
+## Design system
+
+The app's NativeWind design tokens are defined in `src/theme/tokens.css` and imported by `src/global.css`. Use the palette with utilities such as `bg-lingua-purple`, `text-text-primary`, `bg-surface`, and `border-border`.
+
+Global typography utilities `typography__h1`, `typography__h2`, `typography__h3`, `typography__h4`, `typography__body-large`, `typography__body-medium`, `typography__body-small`, and `typography__caption` are defined in `src/global.css`. Font files are registered from `assets/fonts` in `src/theme/fonts.ts` and loaded before the app routes render.
+
 ## Get a fresh project
 
 When you're ready, run:
